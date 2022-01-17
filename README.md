@@ -42,5 +42,8 @@ test Precision: 0.8792
 
 test Recall: 0.8769
 
+
+We can see that VGG16 does poorly in every metric, while ResNet50 and DenseNet121 are quite similar, except that ResNet50 has greater loss. Therefore the best model based on these metrics is DenseNet121.
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
