@@ -12,12 +12,35 @@ There are also other approaches, which use architectures for feature extraction 
 
 Although the results are quite good, there are also limitations. In most cases it is not allowed to use patient’s history, so the detection has to be made only through X-ray images. Second, mostly only the frontal X-rays are being used, while having lateral view available, too, improves accuracy of the model.
 
-## Current results
+## Results
 
-For now pretrained ResNet-50 and DenseNet-121 have been used for pneumonia classification based on Chest X-ray images dataset ([link](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)) with around 5 thousand X-ray images present for training. The dataset is imbalanced with 3875 pneumonia images and 1341 normal images. Therefore, weighted loss is used.
+I used pretrained ResNet-50, DenseNet-121 and VGG-16 for pneumonia classification based on Chest X-ray images dataset ([link](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)) with around 5 thousand X-ray images present for training. The dataset is imbalanced with 3875 pneumonia images and 1341 normal images. Therefore, weighted loss is used.
 
-The accurracy for ResNet-50 is 62.5% and for DenseNet-121 is 88.6%.
+Results for:
 
+- ResNet-50:
+
+test Loss: 0.3232 Acc: 0.8814
+
+test Precision: 0.8990
+
+test Recall: 0.9128
+
+- DenseNet-121:
+
+test Loss: 0.2722 Acc: 0.8958
+
+test Precision: 0.9114
+
+test Recall: 0.9231
+
+- VGG16:
+
+test Loss: 0.6113 Acc: 0.8478
+
+test Precision: 0.8792
+
+test Recall: 0.8769
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
